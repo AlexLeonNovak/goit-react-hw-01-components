@@ -1,0 +1,11 @@
+.label {
+	color: #8a98a5;
+	font-size: 12px;
+	text-transform: capitalize;
+	display: block;
+}
+.quantity {
+	display: block;
+	font-weight: 700;
+	margin-top: 10px;
+}
