@@ -1,0 +1,35 @@
+.item {
+	width: 100%;
+	border: 1px solid #d8e0ea;
+	box-shadow: 0 0 5px #282c34;
+	margin: 15px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+}
+
+.status {
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-left: 30px;
+}
+.online {
+	composes: status;
+	background-color: #00e676;
+}
+.offline {
+	composes: status;
+	background-color: #ff5252;
+}
+.avatar {
+	max-height: 150px;
+	border-radius: 15px;
+	margin-left: 30px;
+}
+.name {
+	font-size: 25px;
+	flex-grow: 1;
+	text-align: center;
+}

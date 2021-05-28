@@ -13,4 +13,8 @@ ul {
 	width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
 }
