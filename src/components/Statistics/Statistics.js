@@ -1,4 +1,5 @@
 import styles from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 export default function Statistics({ title, stats }) {
 	const colors = ['#c62828', '#1e88e5', '#f9a825', '#388e3c', '#ff5722'];
@@ -21,3 +22,16 @@ export default function Statistics({ title, stats }) {
 		</section>
 	);
 }
+
+Statistics.defaultProps = {
+	title: '',
+	stats: [],
+};
+
+Statistics.propTypes = {
+	title: PropTypes.string,
+	stats: PropTypes.arrayOf({
+		label: PropTypes.string.isRequired,
+		percentage: PropTypes.number.isRequired,
+	}),
+};
